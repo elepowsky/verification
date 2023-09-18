@@ -24,8 +24,7 @@ pause_start = time.time()
 
 start = 0
 pause = 0
-speed = 10 # (cm/s) 13
-#max_step = 100 # (cm) 100
+speed = 10 # (cm/s)
 duration = max_step/speed # (s)
 
 
