@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
 im/
+WheeledRobotSimulations/pybullet/Anims/
 WheeledRobotSimulations/pybullet/PData/
 # WheeledRobotSimulations/pybullet/Rooms
 WheeledRobotSimulations/pybullet/*.png
