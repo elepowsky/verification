@@ -6,7 +6,7 @@ WheeledRobotSimulations/pybullet/PData/
 WheeledRobotSimulations/pybullet/*.png
 WheeledRobotSimulations/pybullet/*.csv
 WheeledRobotSimulations/pybullet/AltData
-WheeledRobotSimulations/pybullet/algo_ray.py
+# WheeledRobotSimulations/pybullet/algo_ray.py
 WheeledRobotSimulations/pybullet/Sims/Trials-NoSource
 WheeledRobotSimulations/unused/
 WheeledRobotSimulations/pybullet/unused
