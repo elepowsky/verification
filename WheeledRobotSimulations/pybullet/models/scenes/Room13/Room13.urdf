@@ -1,0 +1,26 @@
+<robot name="Room13">
+    <link name="_name">
+        <visual> 
+            <origin rpy="0.0 0.0 0.0" xyz="-0.5079233018534784 -0.4903284119083773 -0.009999999999999997" />
+                <geometry>
+                    <mesh filename="Room13/Room13.obj" scale="1 1 0.1" />
+                </geometry>
+
+            <material name="black">
+                <color rgba="0.2 0.2 0.2 0.95" />
+            </material>
+        </visual>
+
+       <collision concave="yes" name="collision_0">
+            <origin rpy="0.0 0.0 0.0" xyz="-0.5079233018534784 -0.4903284119083773 -0.009999999999999997" />
+            <geometry>
+                <mesh filename="Room13/Room13_vhacd.obj" scale="1 1 0.1" />
+            </geometry>
+        </collision>
+
+        <inertial> 
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial> 
+    </link>
+</robot>

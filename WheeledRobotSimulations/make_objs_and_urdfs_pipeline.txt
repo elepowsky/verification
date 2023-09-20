@@ -1,0 +1,34 @@
+# How to construct new environments for the source detection problem
+
+Requirements: 
+	(I) Slide-making application that can export as image (e.g., Impress, Keynote, PowerPoint)
+	(II) potrace and blender applications (linux: use apt package manager) -- for .pbm conversion
+	(III) object2urdf pip package -- for URDF generation
+
+(1) Format the environment as a single slide in a presentation-making app (e.g., Keynote, Impress, PowerPoint)
+
+(2) Convert the slide to portable bitmap (.pbm) format
+	(2a) Export to preferred image style (e.g., png, jpeg, etc)
+	(2b) Convert to bitmap (.bmp)
+	(2c) Use potrace to convert .bmp to .pbm (portable bitmap) [convert filename.bmp filename.pbm]
+
+(3) Convert to environment object using blender
+	(3a) Place in blender folder
+	(3b) Use the command blender --background --python pbm_to_obj.py
+
+(4) Create URDF [follow guidelines from README.md at https://github.com/harvard-microrobotics/object2urdf/tree/master]
+	(4a) make subdirectories under todo/ for each object (e.g., Room6/ Room7/ ...)
+	(4b) place .obj and .mtl files into appropriate subdirectories 
+	(4c) navigate to parent directory of todo/
+	(4d) run python3 build_room_urdfs.py
+	(4e) move all urdfs and associated subfolders from todo/ to done/ (LEAVE _prototype.urdf in todo/!!!)
+
+(5) Move URDF files and update configurations
+	(5a) Add .yml file to pybullet/configuration/scenarios (can copy from Room1.yml; just change the name field and any other desired parameters)
+	(5b) Update help argument of ArgumentParser in main script (Room1-N)
+	(5c) navigate to pybullet/models/scenes/ and mkdir RoomK, cd RoomK
+	(5d) cp RoomK.urdf, RoomK.pbm to .../scenes/RoomK
+	(5e) mkdir RoomK inside initial RoomK and navigate to it (i.e., mkdir .../models/scenes/RoomK/RoomK; cd .../models/scenes/RoomK/RoomK)
+	(5f) cp RoomK.obj AND RoomK_vhacd.obj from the output of Step 4 into this folder
+
+

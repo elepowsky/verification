@@ -1,0 +1,11 @@
+/src
+**/*.pyc
+**/__pycache__/ 
+*.egg-info/
+eggs/
+.eggs/
+pybullet/iRobot_gym.egg-info/
+.vscode/
+.vscode/settings.json
+*.pyc
+/.vscode

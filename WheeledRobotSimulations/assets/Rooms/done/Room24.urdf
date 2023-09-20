@@ -1,0 +1,26 @@
+<robot name="Room24">
+    <link name="_name">
+        <visual> 
+            <origin rpy="0.0 0.0 0.0" xyz="-0.5310860083546719 -0.6156729891957669 -0.010000000000000005" />
+                <geometry>
+                    <mesh filename="Room24/Room24.obj" scale="1 1 0.1" />
+                </geometry>
+
+            <material name="black">
+                <color rgba="0.2 0.2 0.2 0.95" />
+            </material>
+        </visual>
+
+       <collision concave="yes" name="collision_0">
+            <origin rpy="0.0 0.0 0.0" xyz="-0.5310860083546719 -0.6156729891957669 -0.010000000000000005" />
+            <geometry>
+                <mesh filename="Room24/Room24_vhacd.obj" scale="1 1 0.1" />
+            </geometry>
+        </collision>
+
+        <inertial> 
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial> 
+    </link>
+</robot>

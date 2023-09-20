@@ -1,0 +1,21 @@
+#
+#
+# Move to necessary directory and activate correct conda environment
+(1a) Move into the pybullet directory
+(1b) Conda activate create3sympy
+
+#
+#
+# Run script to generate AltData
+(2) source run_alt_data_on_one_room.sh ${room_number}   
+# Example usage: source run_alt_data_on_one_room.sh 4
+
+###
+# NOTE: Number of iterations is set in the run_alt_data_on_one_step.sh 
+### 
+
+# 
+# 
+# Calculate new (correct) Tk values using solver in sympy
+(3a) cd AltData
+(3b) source exact_eigs_one_room_and_bin.sh room_number nbins
