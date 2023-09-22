@@ -1,0 +1,31 @@
+PyBullet File Directory
+
+algo.py : Runs the algorithm in PyBullet and saves camera frames from the simulation
+
+algo_ray.py : Runs the algorithm in PyBullet by hallucinating the robot and source positions (only uses ray-casting for speed)
+
+algo_ray_turn.py : Runs the algorithm with an alternative information storage scheme (step size between turns) in PyBullet by hallucinating the robot and source positions (only uses ray-casting for speed)
+
+binning.py : Sample script for generating transition matrices
+
+binning_stats_altdata.py : Alternative script for generating transition matrices
+
+binning_stats_altdata.py : Script for generating transition matrices
+
+coverage_v_time : Process data to determine the coverage versus time for simulated trials
+
+coverage_v_time_full : Alternative script to process data to determine the coverage versus time for simulated trials
+
+ks_v_time.py : Process data to determine the KS test significance versus time for simulated trials
+
+make_reference_distribution.py : Generate the reference distribution from empirical data
+
+pairs.py : Programmatically find start and end vertices in the environment
+
+pairs_big_altdata.py : Perform a random walk to find start and end vertices in the environment
+
+setup.py : Install necessary packages 
+
+sim_data_binning : Sample processing script
+
+sim_data_binning_iterating.py : Sample processing script for large batches of simulation data 

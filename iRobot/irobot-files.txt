@@ -1,0 +1,9 @@
+iRobot File Directory
+
+interruptbt : Arduino program for reading counts from the Geiger counters and relaying to the controller/PC
+
+detector-client.py : Script to run on the Raspberry Pi to connect to the controller/PC and relay counts from the NaI detector (requires detector-specific packages)
+
+random_geiger.py : Run the algorithm on the Create 3 using the Geiger counters
+
+random_NaI.py : Run the algorithm on the Create 3 using the NaI detector
