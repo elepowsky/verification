@@ -2,8 +2,16 @@ iRobot File Directory
 
 interruptbt : Arduino program for reading counts from the Geiger counters and relaying to the controller/PC
 
+blusocket.py : Sample script for connecting to the Raspberry Pi over Bluetooth
+
 detector-client.py : Script to run on the Raspberry Pi to connect to the controller/PC and relay counts from the NaI detector (requires detector-specific packages)
+
+exp_binning.py : Sample processing script for experimental logs (from controller/PC)
+
+experiment_processing.py : Sample processing script for experimental logs (from Vicon tracking)
 
 random_geiger.py : Run the algorithm on the Create 3 using the Geiger counters
 
 random_NaI.py : Run the algorithm on the Create 3 using the NaI detector
+
+serial_read.py : Sample script for reading data from the Arduino over Bluetooth
