@@ -18,3 +18,5 @@ This repository is built from the following sources:
 * B. Ellenberger. [PyBullet Gymperium.](https://github.com/benelot/pybullet-gym) 2019.
 
 * Y. Kadhi et al. [Learning and generalization on a navigation task of a wheeled robot.](https://github.com/Yurof/WheeledRobotSimulations/) 2021.
+
+* [iRobot Education Python SDK](https://github.com/iRobotEducation/irobot-edu-python-sdk).
